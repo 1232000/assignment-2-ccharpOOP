@@ -99,20 +99,6 @@ public class Program{
 	
 	// Q5-----------------------------------------------------------------------------------------------------------------------
 	
-	
-	/*
-a. Ask the user to enter data for 3 tickets
- (movie name, ticket type, seat row, seat number, price). 
- Create each Ticket and add it to the Cinema .
- 
-b. Print all 3 tickets (access by index 0, 1, 2) showing: 
-TicketId, MovieName, Type, Seat, Price, and PriceAfterTax.
-c. Ask the user for a movie name and search for it. Print the result or a "not found" message.
-d. Print the total tickets sold using the method.
-e. Generate and print 2 booking references .
-f. Calculate and print the group discount for a group of 5 tickets at 80 EGP each of them.
-
-	 */ 
 	Console.WriteLine("========= Ticket Booking =========");
 	Cinema cinema = new Cinema();
 	
@@ -167,61 +153,6 @@ f. Calculate and print the group discount for a group of 5 tickets at 80 EGP eac
 	double pricePerTicket = 80;
 	double discount = BookingHelper.CalcGroupDiscount(numberOfTickets, pricePerTicket);
 	Console.WriteLine($"Group Discount ({numberOfTickets} tickets * {pricePerTicket} EGP): {discount} EGP (10% off applied)");
-
-
-
-	/*
-	Console.WriteLine( $" Ticket #{ticket.TicketId}");
-	Console.WriteLine( $" {ticket.MovieName} ");
-	Console.WriteLine( $"{ticket.Type} ");
-	Console.WriteLine( $" Seat: {ticket.Seat} ");
-	Console.WriteLine( $" Price: {ticket.Price}");
-	Console.WriteLine( $"After Tax: {ticket.PriceAfterTax}");*/
-	// Console.WriteLine( $" Ticket #{ticket.TicketId} |  {ticket.MovieName} | {ticket.Type} | Seat: {ticket.Seat} | Price: {ticket.Price} | After Tax: {ticket.PriceAfterTax}");
-
-
-	/*
-	Console.Write("Enter Movie Name: ");
-	string movie = Console.ReadLine();*/
-//--------------------------------------------
-//test
-	// Ticket defaultTicket = new Ticket(movie);
-
-	/*
-	Console.Write("Enter Ticket Type (0 = Standard , 1 = VIP , 2 = IMAX ): ");
-	int typeNumber = int.Parse(Console.ReadLine());
-	TicketType type = (TicketType)typeNumber;
-
-	Console.Write("Enter Seat Row (A, B, C ... ): ");
-	char row = char.Parse(Console.ReadLine());
-
-	Console.Write("Enter Seat Number: ");
-	int seatNumber = int.Parse(Console.ReadLine());
-
-	Console.Write("Enter Price: ");
-	double price = double.Parse(Console.ReadLine());
-	*/
-
-	/*
-	Console.Write("Enter Discount Amount: ");
-	double discount = double.Parse(Console.ReadLine());
-	Console.WriteLine();
-	*/
-
-	/*
-	SeatLocation seat = new SeatLocation(row, seatNumber);
-	Ticket ticket = new Ticket(movie, type, seat, price);
-
-	ticket.PrintTicket(14);
-
-	Console.WriteLine();
-	ticket.ApplyDiscount(ref discount, 14);
-	*/
-
-
-
-
-
 
 	}
 }
